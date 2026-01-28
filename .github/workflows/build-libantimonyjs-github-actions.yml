@@ -1,9 +1,11 @@
 name: build-libantimonyjs-github-actions
 run-name: ${{ github.actor }} is building libantimonyjs
 on:
+  workflow_dispatch: 
   push:
     branches:
       - main
+      - develop
   pull_request:
     branches:
       - '**'
